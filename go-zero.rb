@@ -11,7 +11,6 @@ class GoZero < Formula
   # depends_on "cmake" => :build
 
   def install
-    system "unzip" "-d" "go-zero" "v1.3.5.zip"
     system "cd" "go-zero/tools/goctl"
     system "go" "build"
     bin.install goctl
